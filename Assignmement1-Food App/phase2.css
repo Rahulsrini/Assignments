@@ -1,0 +1,51 @@
+body{
+    margin: 0%;
+    background-image: url("Assets/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 50px;
+}
+header a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;  
+}
+header a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+main{
+    background-color: transparent;
+    margin-top: 0;
+    padding-top: 0;
+}
+main h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+.image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+p {
+    text-align: center;
+    color: black;
+}
+img {
+    width: 500px;
+    height: 500px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
