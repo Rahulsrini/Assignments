@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
 }
@@ -35,7 +38,7 @@ main h2{
     width: 50%;
 }
 p {
-    text-align: center;
+    margin-left: 250px;
     color: black;
 }
 img {

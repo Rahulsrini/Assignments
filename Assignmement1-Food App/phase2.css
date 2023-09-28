@@ -1,11 +1,20 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
-    background-image: url("Assets/bg.jpeg");
+    background-image: url(Assets/bg3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center
+}
+a{
+    opacity: 1;
 }
 header{
-    background-color: transparent;
+    background-color: aliceblue;
+    opacity: 0.1;
     margin-top: 0;
     margin-bottom: 0;
     height: 50px;
@@ -15,7 +24,8 @@ header a{
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;  
+    text-decoration: none;
+    opacity: 1;
 }
 header a:hover{
     background-color: gainsboro;
