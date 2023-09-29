@@ -1,0 +1,57 @@
+body{
+    margin: 0%;
+}
+header{
+    /* rgb(255,111,120) */
+    /* Combination of linear and radial gradients */
+background: linear-gradient(to top, #f988a7, #e63766);
+height: 150px;
+width: 100%;
+}
+.Profile-Pic p{
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    top: -60px;
+    right: 25px;
+}
+.Profile-Pic{
+    position: absolute;
+    right: 575px;
+    top: 100px;
+    
+}
+.Profile-Pic img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.tagline p{
+    color: #2A3389;
+    font-size: large;
+    position: absolute;
+    right: 500px;
+    top: 200px;
+}
+.icons{
+    position: absolute;
+    right: 570px;
+    top: 275px;
+}
+.icons i{
+    padding-right: 10px;
+}
+.buttons{
+    position: absolute;
+    right: 360px;
+    top: 325px;
+}
+.buttons button{
+    color: white;
+    background-color: #2A3389;
+    border-radius: 50px;
+    width: 500px;
+    height: 50px;
+    display: block;
+    
+}
