@@ -1,0 +1,121 @@
+body{
+    margin: 0%;
+}
+header{
+    /* rgb(255,111,120) */
+    /* Combination of linear and radial gradients */
+/* background: linear-gradient(to top, #f988a7, #e63766);
+height: 150px;
+width: 100%; */
+}
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+}
+.glitch {
+    position: relative;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00ffff;
+    z-index: -1;
+}
+.glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+}
+
+@keyframes glitch-color {
+    0% {
+    transform: translate(0);
+    }
+
+    20% {
+    transform: translate(-3px, 3px);
+    }
+
+    40% {
+    transform: translate(-3px, -3px);
+    }
+
+    60% {
+    transform: translate(3px, 3px);
+    }
+
+    80% {
+       transform: translate(3px, -3px);
+    }
+
+    to {
+    transform: translate(0);
+    }
+}
+
+.Profile-Pic p{
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    top: -60px;
+    right: 20px;
+}
+.Profile-Pic{
+    position: absolute;
+    right: 570px;
+    top: 100px;
+    
+}
+.Profile-Pic img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.tagline p{
+    color: #2A3389;
+    font-size: large;
+    position: absolute;
+    right: 495px;
+    top: 200px;
+}
+.icons{
+    position: absolute;
+    right: 555px;
+    top: 275px;
+}
+.icons i{
+    padding-right: 10px;
+}
+.buttons{
+    position: absolute;
+    right: 360px;
+    top: 325px;
+}
+.buttons button{
+    color: white;
+    background-color: #2A3389;
+    border-radius: 50px;
+    width: 500px;
+    height: 50px;
+    display: block;
+}

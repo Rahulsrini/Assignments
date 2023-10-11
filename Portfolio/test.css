@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+}
+.glitch {
+    position: relative;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00ffff;
+    z-index: -1;
+}
+.glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+}
+
+@keyframes glitch-color {
+    0% {
+    transform: translate(0);
+    }
+
+    20% {
+    transform: translate(-3px, 3px);
+    }
+
+    40% {
+    transform: translate(-3px, -3px);
+    }
+
+    60% {
+    transform: translate(3px, 3px);
+    }
+
+    80% {
+    transform: translate(3px, -3px);
+    }
+
+    to {
+    transform: translate(0);
+    }
+}
+/* side Bar starts */
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .sidenav {
+    height: 25%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+    float: right;
+
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    right: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+#topside{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+/* side Bar ends */
+/* About Part Starts */
+.about{
+  background-color: #222;
+  text-align: center;
+}
+
+section article{
+  color: white;
+  font-weight: bolder;
+  display: inline;
+  word-spacing: 5px;
+}
+#yellow{
+  display: inline;
+  color: goldenrod;
+  font-weight: bolder;
+}
+hr{
+  color: #c41fc4;
+  margin-top: 50px;
+}
+.about p{
+  color: #FFFFFF;
+  margin-left: auto;
+  padding: 50px;
+}
+/* About Part Ends */
+.row{
+  background-color: white;
+}
+.services {
+	margin-top:80px;
+	margin-bottom:40px;
+  background-color: white;
+}
+.services .icon {
+  position:relative;
+  width:175px;
+  height:175px;
+  margin:0 auto;
+  text-align:center;
+  line-height:180px;
+  font-size:56px;
+  color:#fff;
+  border-radius:50%;
+  box-shadow:0 0 0 0 rgba(0,0,0,0.0);
+  margin-bottom:40px;
+  -webkit-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+  border: 1px solid #222;
+  color: #222;
+}
+.services .item:hover .icon {
+	background: #222;
+	border: 1px solid #222;
+}
+.services .item [class*=fa] {
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+}
+.services .item:hover [class*=fa] {
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	color:#fff;
+}
+div .item{
+  display: inline-block;
+}
+#Portfolio img{
+  width: 50%;
+}
+/* ----------------------------------------- */
+/* .about-text :nth-child(2) {
+	padding:20px 50px 25px 50px;
+  border: 1px solid blue;
+} */
+.about-image {
+	height:400px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.color-bg {
+	background: #222;
+}
+
+.color-bg a {
+    color: #FFE800;
+}
+.color-bg h6, .color-bg p {
+    color: white;
+}
+.color-bg h6::after{
+	border-color: #fff;
+}
+.color-bg .weight-outline-btn {
+    color: white;
+    border-color: white;
+}
+.color-bg .weight-outline-btn:hover {
+  background: #FFF;
+  color: #222;
+  border-color: rgba(0, 0, 0, 0);
+}
+.about-text {
+	padding:20px 50px 25px 50px;
+}
+.about-text h1 {
+	text-transform:uppercase;
+	font-size:24px;
+	color: #8C8C8C;
+}
+.color-bg h1.arrow span {
+    color: #FFE800;
+}
+.color-bg h1.arrow {
+    color: #FFF;
+}
